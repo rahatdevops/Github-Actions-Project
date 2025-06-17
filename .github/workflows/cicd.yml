@@ -19,7 +19,7 @@ jobs:
     - name: Build with Maven
       run: mvn compile
   security-check:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: compile
 
     steps:
